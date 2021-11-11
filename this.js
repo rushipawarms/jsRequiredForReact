@@ -64,33 +64,34 @@
 
 //3rd case use of bind fuction if we want curent object from this
 
-var name="rushi";
-console.log(this.name);
-let obj={
-    name:"ram",
-    //object function is kown as method
-    fn:function(){
-    console.log(this.name);
-    //this is called funtion
-function add(){
+// var name="rushi";
+// console.log(this.name);
+// let obj={
+//     name:"ram",
+//     //object function is kown as method
+//     fn:function(){
+//     console.log(this.name);
+//     //this is called funtion
+// function add(){
    
-    console.log(this.name)
-    function add1(){
-        console.log(this.name);
-    }
-    //here also we call function not a method
-    let ret=add1.bind(obj);
-    ret();
-}
-//when call function then this refer to window or global object
-add();
-}} 
+//     console.log(this.name)
+//     function add1(){
+//         console.log(this.name);
+//     }
+//     //here also we call function not a method
+//     let ret=add1.bind(obj);
+//     ret();
+// }
+// //when call function then this refer to window or global object
+// add();
+// }} 
 
-//when call method then this refer to current object 
-//obj.fn();
+// //when call method then this refer to current object 
+// //obj.fn();
 
 
-//here also refere to global becuase we call fuction fn1
-let fn1=obj.fn;
+// //here also refere to global becuase we call fuction fn1
+// let fn1=obj.fn;
 
-fn1();
+// fn1();
+
