@@ -1,4 +1,4 @@
-
+//class is working in strict mode 
 class Person{
 
     constructor(name, age){
@@ -28,7 +28,7 @@ let Binod=new  Person("ram",23);
 
 // document.querySelector("button").addEventListener("click",Binod.getName());//His name is ram and age is 23 and this become current object
 
-// setTimeout(Binod.getName,1000);//His name is  and age is undefined here not any listener so this becaome a window object
+//setTimeout(Binod.getName,1000);//His name is  and age is undefined here not any listener so this becaome a window object
 
 // setTimeout(function(){
 //    Binod.getName();
